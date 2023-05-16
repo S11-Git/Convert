@@ -30,7 +30,7 @@ public class ounce extends AppCompatActivity {
                     double pound1 = ounce1 / 16;
                     double kilo1 = ounce1 / 35.274;
 
-                    result.setText("Gram: " + gram1 + "\n" + "Ton: " + ton1 + "\n" + "Pound: " + pound1 + "\n" + "Kilo: " + kilo1);
+                    result.setText( "Gram: " + gram1 + "\n" + "Ton: " + ton1 + "\n" + "Pound: " + pound1 + "\n" + "Kilo: " + kilo1);
                 }
             });
         }catch (Exception e){
