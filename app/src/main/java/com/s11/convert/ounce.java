@@ -18,7 +18,6 @@ public class ounce extends AppCompatActivity {
         EditText ounce = (EditText) findViewById(R.id.input);
         Button convert = (Button)findViewById(R.id.convertbtn);
         TextView result = (TextView)findViewById(R.id.result);
-
         //      convert ounce to gram, ton, pound and kilo in java using try and catch
         try {
             convert.setOnClickListener(new View.OnClickListener() {
@@ -30,15 +29,12 @@ public class ounce extends AppCompatActivity {
                     double pound1 = ounce1 / 16;
                     double kilo1 = ounce1 / 35.274;
 
-                    result.setText( "Gram: " + gram1 + "\n" + "Ton: " + ton1 + "\n" + "Pound: " + pound1 + "\n" + "Kilo: " + kilo1);
+                    result.setText("Gram: " + gram1 + "\n" + "Ton: " + ton1 + "\n" + "Pound: " + pound1 + "\n" + "Kilo: " + kilo1);
                 }
             });
         }catch (Exception e){
 //          print exception to gram
             result.setText(e.toString());
         }
-
-
-
     }
 }
